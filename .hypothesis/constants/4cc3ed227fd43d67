@@ -1,0 +1,4 @@
+# file: C:\tools\framework\.kiro\hooks\framework_compliance.py
+# hypothesis_version: 6.151.9
+
+[0.6, 0.9, 100, '\n  - ', ',', '-', '- ', '- [', '- [ ] ', '.kiro', 'Compliance Rate', 'Compliance Status', 'Compliant', 'Evidence', 'Framework', 'Framework File', 'Missing Steps', 'Missing steps:', 'N/A', 'No Framework Active', 'No evidence found', 'Non-Compliant', 'None', 'Partial Compliance', 'Steps Found', '\\b[A-Za-z]+\\b', '__main__', 'compliance_rate', 'framework_name', 'logs', 'missing_steps', 'projects/', 'r', 'step_evidence', 'steps_found', 'tasks/', 'total_steps', 'utf-8', 'y', 'yes']

@@ -1,0 +1,4 @@
+# file: C:\tools\framework\.kiro\hooks\reasoning_review.py
+# hypothesis_version: 6.151.9
+
+[0.1, 0.2, 0.3, 0.5, 0.8, 1.0, 100, '#', ', ', '-', '.kiro', '; ', 'Action', 'Block', 'Citations present', 'Completeness', 'Context Alignment', 'Criteria Applied', 'Domain-Specific', 'Factual Accuracy', 'Fail', 'Failure Reasons', 'Legal Citation', 'Logical Consistency', 'Overall Status', 'Partial', 'Pass', 'Proceed', 'Reasoning Review', 'Results', 'Review Type', 'Standard', '__main__', 'assume', 'automotive', 'base_criteria', 'budget', 'bylaw', 'completeness', 'considerations', 'context_alignment', 'could', 'criteria.md', 'criteria_file', 'domain_specific', 'explanation', 'factual_accuracy', 'financial', 'framework', 'infer', 'legal', 'likely', 'logical_consistency', 'logs', 'may', 'might', 'organizational', 'probably', 'r', 'reasoning-reviews.md', 'steering', 'steps', 'utf-8']

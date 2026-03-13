@@ -1,0 +1,4 @@
+examples\prototype\tests\run_tests.py: PASS (rc=0)
+examples\prototype\tests\run_product_tests.py: PASS (rc=0)
+
+Overall: PASS

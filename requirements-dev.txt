@@ -1,0 +1,5 @@
+pytest
+mkdocs
+mkdocstrings
+markdown-link-check
+jsonschema

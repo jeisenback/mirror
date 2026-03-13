@@ -1,0 +1,4 @@
+# file: C:\tools\framework\.kiro\hooks\quality_gate_errors.py
+# hypothesis_version: 6.151.9
+
+[0.0, 300, 1000, 'Approved', 'Impact Summary', 'Operation Type', 'Rejected', 'Rejection Reason', 'Timestamp', 'USD', 'User Decision', 'auto_approve_max', 'currency', 'data operation', 'data_thresholds', 'delete', 'financial operation', 'financial_thresholds', 'modify', 'r', 'require_review_min', 'utf-8', 'y', 'yes']

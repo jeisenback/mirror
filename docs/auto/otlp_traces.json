@@ -1,0 +1,376 @@
+{
+  "resourceSpans": [
+    {
+      "resource": {
+        "attributes": [
+          {
+            "key": "source",
+            "value": {
+              "stringValue": "C:\\tools\\framework\\examples\\docs\\traces\\run_product_trace_1773422587.json"
+            }
+          },
+          {
+            "key": "file_count",
+            "value": {
+              "stringValue": "2"
+            }
+          }
+        ]
+      },
+      "instrumentationLibrarySpans": [
+        {
+          "spans": [
+            {
+              "traceId": "d022a239-00d1-474e-bb3c-60f6f16dd9b4",
+              "spanId": "d022a239-00d1-474e-bb3c-60f6f16dd9b4:story",
+              "name": "step",
+              "startTimeUnixNano": null,
+              "endTimeUnixNano": null,
+              "attributes": [
+                {
+                  "key": "story",
+                  "value": {
+                    "stringValue": "{\"title\": \"As a user, Improve search\", \"acceptance_criteria\": [\"Given..., When..., Then...\"], \"estimate\": 3, \"confidence\": 0.9}"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "13253e8b-f9dd-4888-b761-4fcfe562ae60",
+              "spanId": "13253e8b-f9dd-4888-b761-4fcfe562ae60:story",
+              "name": "step",
+              "startTimeUnixNano": null,
+              "endTimeUnixNano": null,
+              "attributes": [
+                {
+                  "key": "story",
+                  "value": {
+                    "stringValue": "{\"title\": \"As a user, Add onboarding flow\", \"acceptance_criteria\": [\"Given..., When..., Then...\"], \"estimate\": 5, \"confidence\": 0.9125}"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "resource": {
+        "attributes": [
+          {
+            "key": "source",
+            "value": {
+              "stringValue": "C:\\tools\\framework\\examples\\docs\\traces\\run_product_trace_1773423686.json"
+            }
+          },
+          {
+            "key": "file_count",
+            "value": {
+              "stringValue": "2"
+            }
+          }
+        ]
+      },
+      "instrumentationLibrarySpans": [
+        {
+          "spans": [
+            {
+              "traceId": "d134bdeb-afcc-498d-9af1-52de89c11cb4",
+              "spanId": "d134bdeb-afcc-498d-9af1-52de89c11cb4:story",
+              "name": "step",
+              "startTimeUnixNano": null,
+              "endTimeUnixNano": null,
+              "attributes": [
+                {
+                  "key": "story",
+                  "value": {
+                    "stringValue": "{\"title\": \"As a user, Improve search\", \"acceptance_criteria\": [\"Given..., When..., Then...\"], \"estimate\": 3, \"confidence\": 0.9}"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "39bf90d6-c287-428c-ab19-e4156dc98a16",
+              "spanId": "39bf90d6-c287-428c-ab19-e4156dc98a16:story",
+              "name": "step",
+              "startTimeUnixNano": null,
+              "endTimeUnixNano": null,
+              "attributes": [
+                {
+                  "key": "story",
+                  "value": {
+                    "stringValue": "{\"title\": \"As a user, Add onboarding flow\", \"acceptance_criteria\": [\"Given..., When..., Then...\"], \"estimate\": 5, \"confidence\": 0.9125}"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "resource": {
+        "attributes": [
+          {
+            "key": "source",
+            "value": {
+              "stringValue": "C:\\tools\\framework\\examples\\docs\\traces\\run_tests_trace_1773422585.json"
+            }
+          },
+          {
+            "key": "file_count",
+            "value": {
+              "stringValue": "2"
+            }
+          }
+        ]
+      },
+      "instrumentationLibrarySpans": [
+        {
+          "spans": [
+            {
+              "traceId": "fcaed9b8-f8db-408d-979f-a59024656de8",
+              "spanId": "fcaed9b8-f8db-408d-979f-a59024656de8:skill",
+              "name": "step",
+              "startTimeUnixNano": null,
+              "endTimeUnixNano": null,
+              "attributes": [
+                {
+                  "key": "label",
+                  "value": {
+                    "stringValue": "not_qualified"
+                  }
+                },
+                {
+                  "key": "confidence",
+                  "value": {
+                    "stringValue": "0.6"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "af4ac3aa-b503-4f49-8282-b80e2a51a498",
+              "spanId": "af4ac3aa-b503-4f49-8282-b80e2a51a498:skill",
+              "name": "step",
+              "startTimeUnixNano": null,
+              "endTimeUnixNano": null,
+              "attributes": [
+                {
+                  "key": "label",
+                  "value": {
+                    "stringValue": "qualified"
+                  }
+                },
+                {
+                  "key": "confidence",
+                  "value": {
+                    "stringValue": "0.95"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "resource": {
+        "attributes": [
+          {
+            "key": "source",
+            "value": {
+              "stringValue": "C:\\tools\\framework\\examples\\docs\\traces\\run_tests_trace_1773423275.json"
+            }
+          },
+          {
+            "key": "file_count",
+            "value": {
+              "stringValue": "2"
+            }
+          }
+        ]
+      },
+      "instrumentationLibrarySpans": [
+        {
+          "spans": [
+            {
+              "traceId": "ec221eb3-06ff-4d81-9f4c-cea1b5a67da2",
+              "spanId": "ec221eb3-06ff-4d81-9f4c-cea1b5a67da2:skill",
+              "name": "step",
+              "startTimeUnixNano": null,
+              "endTimeUnixNano": null,
+              "attributes": [
+                {
+                  "key": "label",
+                  "value": {
+                    "stringValue": "not_qualified"
+                  }
+                },
+                {
+                  "key": "confidence",
+                  "value": {
+                    "stringValue": "0.6"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "6340b70d-12fd-42e1-abae-254d7aac19f5",
+              "spanId": "6340b70d-12fd-42e1-abae-254d7aac19f5:skill",
+              "name": "step",
+              "startTimeUnixNano": null,
+              "endTimeUnixNano": null,
+              "attributes": [
+                {
+                  "key": "label",
+                  "value": {
+                    "stringValue": "qualified"
+                  }
+                },
+                {
+                  "key": "confidence",
+                  "value": {
+                    "stringValue": "0.95"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "resource": {
+        "attributes": [
+          {
+            "key": "source",
+            "value": {
+              "stringValue": "C:\\tools\\framework\\examples\\docs\\traces\\run_tests_trace_1773424023.json"
+            }
+          },
+          {
+            "key": "file_count",
+            "value": {
+              "stringValue": "2"
+            }
+          }
+        ]
+      },
+      "instrumentationLibrarySpans": [
+        {
+          "spans": [
+            {
+              "traceId": "719bdeaf-491b-451e-89b1-146a1bd372d3",
+              "spanId": "719bdeaf-491b-451e-89b1-146a1bd372d3:skill",
+              "name": "step",
+              "startTimeUnixNano": null,
+              "endTimeUnixNano": null,
+              "attributes": [
+                {
+                  "key": "label",
+                  "value": {
+                    "stringValue": "not_qualified"
+                  }
+                },
+                {
+                  "key": "confidence",
+                  "value": {
+                    "stringValue": "0.6"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "43ed818c-4ae5-426f-9853-b9d2cf38deb5",
+              "spanId": "43ed818c-4ae5-426f-9853-b9d2cf38deb5:skill",
+              "name": "step",
+              "startTimeUnixNano": null,
+              "endTimeUnixNano": null,
+              "attributes": [
+                {
+                  "key": "label",
+                  "value": {
+                    "stringValue": "qualified"
+                  }
+                },
+                {
+                  "key": "confidence",
+                  "value": {
+                    "stringValue": "0.95"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "resource": {
+        "attributes": [
+          {
+            "key": "source",
+            "value": {
+              "stringValue": "C:\\tools\\framework\\examples\\docs\\traces\\run_tests_trace_1773424235.json"
+            }
+          },
+          {
+            "key": "file_count",
+            "value": {
+              "stringValue": "2"
+            }
+          }
+        ]
+      },
+      "instrumentationLibrarySpans": [
+        {
+          "spans": [
+            {
+              "traceId": "de7b31ec-c38f-4984-b7b6-b151eb4137ed",
+              "spanId": "de7b31ec-c38f-4984-b7b6-b151eb4137ed:skill",
+              "name": "step",
+              "startTimeUnixNano": null,
+              "endTimeUnixNano": null,
+              "attributes": [
+                {
+                  "key": "label",
+                  "value": {
+                    "stringValue": "not_qualified"
+                  }
+                },
+                {
+                  "key": "confidence",
+                  "value": {
+                    "stringValue": "0.6"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "f0a41738-189d-43c4-987f-0008a1b0e9d1",
+              "spanId": "f0a41738-189d-43c4-987f-0008a1b0e9d1:skill",
+              "name": "step",
+              "startTimeUnixNano": null,
+              "endTimeUnixNano": null,
+              "attributes": [
+                {
+                  "key": "label",
+                  "value": {
+                    "stringValue": "qualified"
+                  }
+                },
+                {
+                  "key": "confidence",
+                  "value": {
+                    "stringValue": "0.95"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

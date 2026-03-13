@@ -1,0 +1,26 @@
+[
+  {
+    "step_id": "d134bdeb-afcc-498d-9af1-52de89c11cb4:story",
+    "task_id": "d134bdeb-afcc-498d-9af1-52de89c11cb4",
+    "story": {
+      "title": "As a user, Improve search",
+      "acceptance_criteria": [
+        "Given..., When..., Then..."
+      ],
+      "estimate": 3,
+      "confidence": 0.9
+    }
+  },
+  {
+    "step_id": "39bf90d6-c287-428c-ab19-e4156dc98a16:story",
+    "task_id": "39bf90d6-c287-428c-ab19-e4156dc98a16",
+    "story": {
+      "title": "As a user, Add onboarding flow",
+      "acceptance_criteria": [
+        "Given..., When..., Then..."
+      ],
+      "estimate": 5,
+      "confidence": 0.9125
+    }
+  }
+]

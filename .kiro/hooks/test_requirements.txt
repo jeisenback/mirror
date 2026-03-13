@@ -1,0 +1,13 @@
+# Test dependencies for Reasoning Context Framework hooks
+# Install with: pip install -r test_requirements.txt
+
+# Property-based testing
+hypothesis>=6.0.0
+
+# Testing framework
+pytest>=7.0.0
+pytest-cov>=4.0.0
+
+# Code quality
+pylint>=2.15.0
+black>=22.0.0

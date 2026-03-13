@@ -1,0 +1,113 @@
+{
+  "hooks": {
+    "data_decision_gate": {
+      "enabled": true,
+      "script": ".kiro/hooks/data_decision_gate.py",
+      "trigger": "before_file_operation",
+      "conditions": [
+        "operation_type in ['delete', 'modify']",
+        "file_contains_sensitive_data or is_bulk_operation"
+      ],
+      "action": "require_user_approval",
+      "log_path": ".kiro/logs/data-decisions.md",
+      "timeout_seconds": 30,
+      "description": "Reviews data operations affecting integrity, privacy, or persistence"
+    },
+    "financial_decision_gate": {
+      "enabled": true,
+      "script": ".kiro/hooks/financial_decision_gate.py",
+      "trigger": "before_financial_operation",
+      "conditions": [
+        "has_monetary_impact"
+      ],
+      "action": "require_user_approval_if_threshold_exceeded",
+      "log_path": ".kiro/logs/financial-decisions.md",
+      "timeout_seconds": 30,
+      "thresholds": {
+        "auto_approve_max": 50,
+        "require_review_min": 50,
+        "currency": "USD"
+      },
+      "description": "Reviews financial decisions with monetary implications"
+    },
+    "drift_detection": {
+      "enabled": true,
+      "script": ".kiro/hooks/drift_detection.py",
+      "trigger": "after_output_generation",
+      "conditions": [],
+      "action": "log_only",
+      "log_path": ".kiro/logs/ai-drift.md",
+      "timeout_seconds": 10,
+      "baseline_path": ".kiro/steering/framework/ai-behavior-baseline/",
+      "description": "Detects deviations from baseline AI behavior patterns"
+    },
+    "hallucination_detection": {
+      "enabled": true,
+      "script": ".kiro/hooks/hallucination_detection.py",
+      "trigger": "after_output_generation",
+      "conditions": [
+        "output_contains_factual_claims"
+      ],
+      "action": "block_on_unsupported_claims",
+      "log_path": ".kiro/logs/hallucination-flags.md",
+      "timeout_seconds": 20,
+      "description": "Validates factual claims against steering file content"
+    },
+    "reasoning_review": {
+      "enabled": true,
+      "script": ".kiro/hooks/reasoning_review.py",
+      "trigger": "before_operation_execution",
+      "conditions": [
+        "is_critical_decision"
+      ],
+      "action": "block_on_validation_failure",
+      "log_path": ".kiro/logs/reasoning-reviews.md",
+      "timeout_seconds": 30,
+      "criteria_path": ".kiro/steering/framework/reasoning-review-process/",
+      "description": "Applies structured review criteria to validate AI outputs"
+    },
+    "framework_compliance": {
+      "enabled": true,
+      "script": ".kiro/hooks/framework_compliance.py",
+      "trigger": "after_output_generation",
+      "conditions": [
+        "active_reasoning_framework_exists"
+      ],
+      "action": "flag_non_compliance",
+      "log_path": ".kiro/logs/framework-compliance.md",
+      "timeout_seconds": 15,
+      "patterns_path": ".kiro/steering/framework/reasoning-patterns/",
+      "description": "Validates outputs follow documented reasoning frameworks"
+    }
+  },
+  "integration_points": {
+    "before_file_operation": {
+      "description": "Executes before file operations (create, modify, delete)",
+      "hooks": ["data_decision_gate"]
+    },
+    "before_command_execution": {
+      "description": "Executes before shell commands are run",
+      "hooks": []
+    },
+    "before_financial_operation": {
+      "description": "Executes before operations with monetary impact",
+      "hooks": ["financial_decision_gate"]
+    },
+    "after_output_generation": {
+      "description": "Executes after AI generates output, before presenting to user",
+      "hooks": ["drift_detection", "hallucination_detection", "framework_compliance"]
+    },
+    "before_operation_execution": {
+      "description": "Executes before executing any operation (final quality gate)",
+      "hooks": ["reasoning_review"]
+    }
+  },
+  "global_settings": {
+    "default_timeout_seconds": 30,
+    "log_timestamp_format": "ISO8601",
+    "enable_context_tracking": true,
+    "context_include_active_steering_files": true,
+    "max_hook_retries": 2,
+    "hook_failure_default_action": "block"
+  }
+}

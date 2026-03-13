@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Prototype Trace Step",
+  "description": "A permissive schema for prototype trace/belief-store step entries. Aligns loosely with OpenTelemetry span concepts.",
+  "type": "object",
+  "properties": {
+    "trace_id": {"type": "string"},
+    "span_id": {"type": "string"},
+    "step_id": {"type": "string"},
+    "task_id": {"type": "string"},
+    "parent_id": {"type": "string"},
+    "start_time": {"type": ["string", "number"]},
+    "end_time": {"type": ["string", "number"]},
+    "type": {"type": "string"},
+    "name": {"type": "string"},
+    "label": {"type": "string"},
+    "confidence": {"type": "number"},
+    "tokens_used": {"type": "number"},
+    "latency": {"type": "number"},
+    "attributes": {"type": "object"},
+    "service": {"type": "object"},
+    "error": {"type": "string"}
+  },
+  "required": ["step_id"],
+  "additionalProperties": true
+}

@@ -1,0 +1,6 @@
+# Minimal requirements for prototype (optional)
+# pytest not required for the included run_tests runner
+redis
+fastapi
+uvicorn
+tiktoken

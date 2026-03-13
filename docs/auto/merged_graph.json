@@ -1,0 +1,82 @@
+{
+  "nodes": [
+    {
+      "id": "d022a239-00d1-474e-bb3c-60f6f16dd9b4:story",
+      "task_id": "d022a239-00d1-474e-bb3c-60f6f16dd9b4",
+      "label": "",
+      "confidence": null,
+      "raw": {
+        "step_id": "d022a239-00d1-474e-bb3c-60f6f16dd9b4:story",
+        "task_id": "d022a239-00d1-474e-bb3c-60f6f16dd9b4",
+        "story": {
+          "title": "As a user, Improve search",
+          "acceptance_criteria": [
+            "Given..., When..., Then..."
+          ],
+          "estimate": 3,
+          "confidence": 0.9
+        }
+      }
+    },
+    {
+      "id": "13253e8b-f9dd-4888-b761-4fcfe562ae60:story",
+      "task_id": "13253e8b-f9dd-4888-b761-4fcfe562ae60",
+      "label": "",
+      "confidence": null,
+      "raw": {
+        "step_id": "13253e8b-f9dd-4888-b761-4fcfe562ae60:story",
+        "task_id": "13253e8b-f9dd-4888-b761-4fcfe562ae60",
+        "story": {
+          "title": "As a user, Add onboarding flow",
+          "acceptance_criteria": [
+            "Given..., When..., Then..."
+          ],
+          "estimate": 5,
+          "confidence": 0.9125
+        }
+      }
+    },
+    {
+      "id": "fcaed9b8-f8db-408d-979f-a59024656de8:skill",
+      "task_id": "fcaed9b8-f8db-408d-979f-a59024656de8",
+      "label": "not_qualified",
+      "confidence": 0.6,
+      "raw": {
+        "step_id": "fcaed9b8-f8db-408d-979f-a59024656de8:skill",
+        "task_id": "fcaed9b8-f8db-408d-979f-a59024656de8",
+        "label": "not_qualified",
+        "confidence": 0.6
+      }
+    },
+    {
+      "id": "af4ac3aa-b503-4f49-8282-b80e2a51a498:skill",
+      "task_id": "af4ac3aa-b503-4f49-8282-b80e2a51a498",
+      "label": "qualified",
+      "confidence": 0.95,
+      "raw": {
+        "step_id": "af4ac3aa-b503-4f49-8282-b80e2a51a498:skill",
+        "task_id": "af4ac3aa-b503-4f49-8282-b80e2a51a498",
+        "label": "qualified",
+        "confidence": 0.95
+      }
+    }
+  ],
+  "edges": [
+    {
+      "src": "d022a239-00d1-474e-bb3c-60f6f16dd9b4:story",
+      "dst": "13253e8b-f9dd-4888-b761-4fcfe562ae60:story",
+      "kind": "sequence",
+      "trace": "run_product_trace_1773422587.json"
+    },
+    {
+      "src": "fcaed9b8-f8db-408d-979f-a59024656de8:skill",
+      "dst": "af4ac3aa-b503-4f49-8282-b80e2a51a498:skill",
+      "kind": "sequence",
+      "trace": "run_tests_trace_1773422585.json"
+    }
+  ],
+  "trace_files": [
+    "run_product_trace_1773422587.json",
+    "run_tests_trace_1773422585.json"
+  ]
+}

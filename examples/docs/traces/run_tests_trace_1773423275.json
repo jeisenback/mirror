@@ -1,0 +1,14 @@
+[
+  {
+    "step_id": "ec221eb3-06ff-4d81-9f4c-cea1b5a67da2:skill",
+    "task_id": "ec221eb3-06ff-4d81-9f4c-cea1b5a67da2",
+    "label": "not_qualified",
+    "confidence": 0.6
+  },
+  {
+    "step_id": "6340b70d-12fd-42e1-abae-254d7aac19f5:skill",
+    "task_id": "6340b70d-12fd-42e1-abae-254d7aac19f5",
+    "label": "qualified",
+    "confidence": 0.95
+  }
+]

@@ -1,0 +1,9 @@
+id: skills/lead_qualification:v1
+name: Lead Qualification
+inputs:
+  - name: lead
+    type: object
+outputs:
+  - name: status
+    type: string
+version: v1

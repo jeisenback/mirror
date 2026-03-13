@@ -1,0 +1,4 @@
+# file: C:\tools\framework\.kiro\hooks\data_decision_gate.py
+# hypothesis_version: 6.151.9
+
+['\nExample:', ', ', '-', '--bulk', '--sensitive', '.aws', '.env', '.kiro', '.ssh', '=', 'Affected Files', 'Approved', 'Bulk Operation', 'Data Decision', 'Deletion', 'Impact', 'Impact Summary', 'Modification', 'None', 'Operation', 'Rejected', 'Rejection Reason', 'Sensitive Data', 'Unknown', 'User Decision', '__main__', 'api_key', 'content', 'credential', 'credentials', 'data-decisions.md', 'delete', 'edit', 'file_path', 'is_bulk', 'keys', 'logs', 'modify', 'n', 'no', 'operation_type', 'password', 'password=secret123', 'passwords', 'private', 'private_key', 'rationale', 'remove', 'rm', 'secret', 'secrets', 'social_security', 'ssn', 'token', 'update', 'write', 'y', 'yes']

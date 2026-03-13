@@ -1,0 +1,13 @@
+site_name: Framework Prototype Docs
+docs_dir: docs/auto
+theme:
+  name: material
+nav:
+  - Home: index.md
+site_name: Agent Platform Prototype Docs
+nav:
+  - Home: index.md
+docs_dir: docs
+site_dir: site
+theme:
+  name: material

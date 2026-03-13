@@ -1,0 +1,9 @@
+id: skills/story_generation:v1
+name: Story Generation
+inputs:
+  - name: feature
+    type: object
+outputs:
+  - name: story
+    type: object
+version: v1
