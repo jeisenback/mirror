@@ -1,4 +1,0 @@
-# file: C:\tools\framework\.kiro\hooks\reference_resolver.py
-# hypothesis_version: 6.151.9
-
-[' → ', '/steering/framework/', '/steering/household/', '/steering/projects/', '/steering/roles/', '/steering/tasks/', '\\[\\[([^\\]]+)\\]\\]', '\\steering\\framework\\', '\\steering\\household\\', '\\steering\\projects\\', '\\steering\\roles\\', '\\steering\\tasks\\', 'framework', 'household', 'project', 'r', 'role', 'task', 'unknown', 'utf-8']

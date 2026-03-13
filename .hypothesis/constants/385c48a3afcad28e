@@ -1,4 +1,0 @@
-# file: C:\tools\framework\.kiro\hooks\hallucination_detection.py
-# hypothesis_version: 6.151.9
-
-[0.0, 0.3, 0.4, 0.5, 200, ', ', '.kiro', '?', 'Citation Required', 'Claim', 'Claim Type', 'Confidence Score', 'Consider', 'Hallucination Flag', 'Inference', 'None found', 'Note', 'Please', 'Supported', 'Supporting Evidence', 'Try', 'Unsupported', 'User Action', 'Validation Result', '[.!?]\\s+', '\\[\\[([^\\]]+)\\]\\]', '\\b\\d+(?:\\.\\d+)?\\b', '\\b\\w+\\b', '__main__', 'a', 'an', 'and', 'appears', 'are', 'assume', 'at', 'but', 'by', 'confirmed', 'could', 'factual', 'for', 'from', 'in', 'inference', 'is', 'likely', 'logs', 'may', 'might', 'numerical', 'of', 'on', 'or', 'perhaps', 'possibly', 'probably', 'procedural', 'r', 'reference', 'rejected', 'section\\s+(\\d+)', 'seems', 'suppose', 'the', 'to', 'updated', 'updated steering', 'utf-8', 'was', 'were', 'with']
