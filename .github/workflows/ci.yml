@@ -105,10 +105,10 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Install mkdocs
+      - name: Install mkdocs and dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install mkdocs mkdocs-material
+          pip install mkdocs mkdocs-material beautifulsoup4
 
       - name: Generate docs (tools/gen_docs.py)
         run: |
@@ -158,6 +158,28 @@ jobs:
         run: |
           mkdocs build --site-dir site
 
-      - name: Verify site index contains expected title
+      - name: Verify site index (HTML parse)
         run: |
-          if grep -q "Prototype Documentation" site/index.html; then echo "Found title"; else echo "Missing expected title in site/index.html" && exit 1; fi
+          python - <<'PY'
+          from bs4 import BeautifulSoup
+          import sys
+          from pathlib import Path
+
+          p = Path('site/index.html')
+          if not p.exists():
+              print('site/index.html not found')
+              sys.exit(1)
+          html = p.read_text(encoding='utf-8')
+          soup = BeautifulSoup(html, 'html.parser')
+          # prefer H1 title check
+          h1 = soup.find('h1')
+          if not h1 or 'Prototype Documentation' not in h1.get_text():
+              print('Missing expected H1 title in site/index.html')
+              sys.exit(1)
+          # ensure there's at least one generated node link
+          links = [a for a in soup.find_all('a') if a.get('href') and (a.get('href').endswith('.md') or a.get('href').endswith('.html'))]
+          if not links:
+              print('No generated node links found in site/index.html')
+              sys.exit(1)
+          print('Site verification passed')
+          PY
