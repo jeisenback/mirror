@@ -5,7 +5,8 @@ title: Prototype Documentation
 
 # Prototype Documentation
 
-![Generated 2026-03-13](https://img.shields.io/badge/Generated-2026-03-13-blue)
+![CI badge](https://github.com/jeisenback/mirror/actions/workflows/ci.yml/badge.svg)  
+![Pages](https://github.com/jeisenback/mirror/actions/workflows/deploy_pages.yml/badge.svg)  ![Generated 2026-03-13](https://img.shields.io/badge/Generated-2026-03-13-blue)
 
 This folder contains generated documentation nodes for the prototype. Files are produced by `examples/prototype/docs/hooks/emit_node.py` and collected into `docs/auto` by `tools/gen_docs.py`.
 
