@@ -1,7 +1,3 @@
-  name: material
-  - Home: index.md
-  - Home: index.md
-  name: material
 site_name: Framework Prototype Docs
 docs_dir: docs
 site_dir: site
